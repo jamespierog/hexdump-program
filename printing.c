@@ -2,12 +2,6 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-// https://www.lemoda.net/c/printf-hexadecimal/
-// https://www.tutorialspoint.com/c_standard_library/c_function_fprintf.html
-// https://www.tutorialspoint.com/c_standard_library/c_function_isprint.htm
-// The C Programming Language
-// https://stackoverflow.com/questions/5608179/setting-a-string-to-null-in-c
-
 void usage(char *prog) {
   fprintf(stderr, "Usage: %s INPUT_FILENAME OUTPUT_FILENAME\n", prog);
 }
