@@ -21,7 +21,7 @@ int main(int argc, char **argv) {
     return 1;
   }
 
-  if (argc > 2) {
+  if (argc > 3) {
     fprintf(stderr, "%s: too many arguments\n", argv[0]);
     usage(argv[0]);
     return 1;
@@ -35,8 +35,8 @@ int main(int argc, char **argv) {
   int i = 0;
 
   // Read files for input and output
-  fp_input = fopen("text.txt", "r");
-  fp_output = fopen("output.txt", "w+");
+  fp_input = fopen(argv[1], "r");
+  fp_output = fopen(argv[2], "w+");
 
   fprintf(fp_output, "%08x  ", bitcount);
 
